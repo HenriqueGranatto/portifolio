@@ -7,7 +7,6 @@ $("document").ready(function(){
 
 	//SCRIPT PARA ENVIO DO EMAIL
 	$('#enviarEmail').click(function() {
-		$("body").load("https://henrique-granatto-163111.appspot.com/php/email");
 		//PEGA VALO DOS CAMPOS
 		var nome = $("input[type=text][name=nome]").val();
 		var telefone = $("input[type=tel][name=telefone]").val();
@@ -36,6 +35,7 @@ $("document").ready(function(){
 		        $("input[type=text][name=telefone]").val("");
 		        $("input[type=text][name=email]").val("");
 		        $("input[type=text][name=assunto]").val("");
+			console.log(data);
 		      },
 		      error: function(data){
 		        var data = {message: 'Mensagem enviada'};
@@ -44,6 +44,7 @@ $("document").ready(function(){
 		        $("input[type=text][name=telefone]").val("");
 		        $("input[type=text][name=email]").val("");
 		        $("input[type=text][name=assunto]").val("");
+			console.log(data);
 		      }
 		  });
 		}
