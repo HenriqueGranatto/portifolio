@@ -24,7 +24,7 @@ $("document").ready(function(){
 		{
 		  //SE OS CAMPOS NÃO ESTIVEREM VAZIOS, MANDA UMA REQUISIÇÃO PRO PHP ENVIAR O EMAIL.
 		  $.ajax({
-		      url: "henrique-granatto-163111.appspot.com/php/email",
+		      url: "https://henrique-granatto-163111.appspot.com/php/email",
 		      type: "POST",
 		      data: {nome:nome, telefone:telefone, email:email, assunto:assunto},
 		      dataType: "json",
