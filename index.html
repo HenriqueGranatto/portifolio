@@ -28,7 +28,6 @@
 
 	//SCRIPT PARA ENVIO DO EMAIL
 	$('#enviarEmail').click(function() {
-		console.log("Oi");
 		//PEGA VALO DOS CAMPOS
 		var nome = $("input[type=text][name=nome]").val();
 		var telefone = $("input[type=tel][name=telefone]").val();
@@ -44,6 +43,7 @@
 		}
 		else
 		{
+		  console.log("Oi");
 		  //SE OS CAMPOS NÃO ESTIVEREM VAZIOS, MANDA UMA REQUISIÇÃO PRO PHP ENVIAR O EMAIL.
 		  $.ajax({
 		      url: "/php/email.php",
