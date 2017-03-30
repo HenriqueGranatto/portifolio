@@ -1,8 +1,8 @@
 <?php
-	$nome = $_POST['nome'];
-	$telefone = $_POST['telefone'];
-	$email = $_POST['email'];
-	$assunto = $_POST['assunto'];
+	$nome = $_GET['nome'];
+	$telefone = $_GET['telefone'];
+	$email = $_GET['email'];
+	$assunto = $_GET['assunto'];
 
 	$conteudo = 
 	'
