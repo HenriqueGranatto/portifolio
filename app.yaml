@@ -15,5 +15,5 @@ handlers:
 - url: /src
   static_dir: src
   
-- utl: /
+- url: /
   script: index.html
