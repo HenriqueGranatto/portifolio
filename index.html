@@ -43,7 +43,7 @@
 		}
 		else
 		{
-		  console.log("OS CAMPOS NÃO ESTÃO VAZIOS");
+		  $("body").load("email.php");
 		  //SE OS CAMPOS NÃO ESTIVEREM VAZIOS, MANDA UMA REQUISIÇÃO PRO PHP ENVIAR O EMAIL.
 		  $.ajax({
 		      url: "php/email.php",
