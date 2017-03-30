@@ -7,7 +7,6 @@ $("document").ready(function(){
 
 	//SCRIPT PARA ENVIO DO EMAIL
 	$('#enviarEmail').click(function() {
-		console.log("Oi");
 		//PEGA VALO DOS CAMPOS
 		var nome = $("input[type=text][name=nome]").val();
 		var telefone = $("input[type=tel][name=telefone]").val();
@@ -25,7 +24,7 @@ $("document").ready(function(){
 		{
 		  //SE OS CAMPOS NÃO ESTIVEREM VAZIOS, MANDA UMA REQUISIÇÃO PRO PHP ENVIAR O EMAIL.
 		  $.ajax({
-		      url: "/php/email.php",
+		      url: "php/email.php",
 		      type: "POST",
 		      data: {nome:nome, telefone:telefone, email:email, assunto:assunto},
 		      dataType: "json",
