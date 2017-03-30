@@ -1,12 +1,19 @@
- runtime: php55
- api_version: 1
- threadsafe: true
+runtime: php55
+api_version: 1
+threadsafe: true
 
- handlers:
- - url: /
-   static_files: www/index.html
-   upload: www/index.html
-
- - url: /(.*)
-   static_files: www/\1
-   upload: www/(.*)
+handlers:   
+- url: /css
+  static_dir: css
+  
+- url: /js
+  static_dir: js
+  
+- url: /img
+  static_dir: img
+  
+- url: /src
+  static_dir: src
+  
+- utl: /
+  script: index.html
