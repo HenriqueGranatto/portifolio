@@ -35,7 +35,6 @@ $("document").ready(function(){
 		        $("input[type=text][name=telefone]").val("");
 		        $("input[type=text][name=email]").val("");
 		        $("input[type=text][name=assunto]").val("");
-			      console.log(data);
 		      },
 		      error: function(data){
 		        var data = {message: 'Mensagem enviada'};
