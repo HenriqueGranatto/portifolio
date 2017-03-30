@@ -2,7 +2,7 @@ runtime: php55
 api_version: 1
 
 handlers:
--url: /css
+- url: /css
   static_dir: css
 
 - url: /.*
