@@ -1,5 +1,5 @@
 <?php
-	$nome = $_POST['nome'];
+/*	$nome = $_POST['nome'];
 	$telefone = $_POST['telefone'];
 	$email = $_POST['email'];
 	$assunto = $_POST['assunto'];
@@ -31,5 +31,7 @@ $headers .= 'From: '.$nome.'' . "\r\n";
 if(mail("henrique.ramires.granatto@gmail.com","Contato Cliente",$conteudo, $headers))
 {
 	return false;
-}
+}*/
+
+mail("henrique.ramires.granatto@gmail.com","Contato Cliente",$conteudo, $headers);
 ?>
