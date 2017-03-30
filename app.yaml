@@ -4,6 +4,18 @@ api_version: 1
 handlers:
 - url: /css
   static_dir: css
+  
+- url: /js
+  static_dir: js
+  
+- url: /php
+  static_dir: php
+  
+- url: /img
+  static_dir: img
+  
+- url: /src
+  static_dir: src
 
 - url: /.*
   script: index.html
