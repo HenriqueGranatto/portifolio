@@ -24,7 +24,7 @@ $("document").ready(function(){
 		{
 		  //SE OS CAMPOS NÃO ESTIVEREM VAZIOS, MANDA UMA REQUISIÇÃO PRO PHP ENVIAR O EMAIL.
 		  $.ajax({
-		      url: "php/email.php",
+		      url: "../php/email.php",
 		      type: "POST",
 		      data: {nome:nome, telefone:telefone, email:email, assunto:assunto},
 		      dataType: "json",
