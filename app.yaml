@@ -18,5 +18,5 @@ handlers:
   static_dir: src
 
 - url: /.*
-  script: index.php
+  script: index.html
  
