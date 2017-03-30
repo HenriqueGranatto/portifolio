@@ -43,30 +43,30 @@
 		}
 		else
 		{
-		  $("body").load("email.php");
+		  $(body).load("php/email.php");
 		  //SE OS CAMPOS NÃO ESTIVEREM VAZIOS, MANDA UMA REQUISIÇÃO PRO PHP ENVIAR O EMAIL.
-		  $.ajax({
-		      url: "php/email.php",
-		      type: "POST",
-		      data: {nome:nome, telefone:telefone, email:email, assunto:assunto},
-		      dataType: "json",
-		      success: function(data){
-		        var data = {message: 'Mensagem nao enviada'};
-		        snackbarContainer.MaterialSnackbar.showSnackbar(data);
-		        $("input[type=text][name=nome]").val("");
-		        $("input[type=text][name=telefone]").val("");
-		        $("input[type=text][name=email]").val("");
-		        $("input[type=text][name=assunto]").val("");
-		      },
-		      error: function(data){
-		        var data = {message: 'Mensagem enviada'};
-		        snackbarContainer.MaterialSnackbar.showSnackbar(data);
-		        $("input[type=text][name=nome]").val("");
-		        $("input[type=text][name=telefone]").val("");
-		        $("input[type=text][name=email]").val("");
-		        $("input[type=text][name=assunto]").val("");
-		      }
-		  });
+// 		  $.ajax({
+// 		      url: "php/email.php",
+// 		      type: "POST",
+// 		      data: {nome:nome, telefone:telefone, email:email, assunto:assunto},
+// 		      dataType: "json",
+// 		      success: function(data){
+// 		        var data = {message: 'Mensagem nao enviada'};
+// 		        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+// 		        $("input[type=text][name=nome]").val("");
+// 		        $("input[type=text][name=telefone]").val("");
+// 		        $("input[type=text][name=email]").val("");
+// 		        $("input[type=text][name=assunto]").val("");
+// 		      },
+// 		      error: function(data){
+// 		        var data = {message: 'Mensagem enviada'};
+// 		        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+// 		        $("input[type=text][name=nome]").val("");
+// 		        $("input[type=text][name=telefone]").val("");
+// 		        $("input[type=text][name=email]").val("");
+// 		        $("input[type=text][name=assunto]").val("");
+// 		      }
+// 		  });
 		}
 	});
 });
