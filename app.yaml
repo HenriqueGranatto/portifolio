@@ -2,8 +2,8 @@ runtime: php55
 api_version: 1
 
 handlers:
-- url: /php
-  static_dir: php
+- url: /php/.*
+  script: php
 
 - url: /css
   static_dir: css
