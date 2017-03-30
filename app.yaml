@@ -2,18 +2,18 @@ runtime: php55
 api_version: 1
 
 handlers:
-- url: /css
+- url: /css/.*
   static-files: css
 
-- url: /js
+- url: /js/.*
   static-files: js
 
 
-- url: /img
+- url: /img/.*
   static-files: img
   
 
-- url: /img
+- url: /img/.*
   static-files: img
   
 
@@ -21,7 +21,7 @@ handlers:
   static-files: src
   
 
-- url: /php
+- url: /php/.*
   static-files: php
 
 - url: /.*
