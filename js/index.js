@@ -7,6 +7,7 @@ $("document").ready(function(){
 
 	//SCRIPT PARA ENVIO DO EMAIL
 	$('#enviarEmail').click(function() {
+		console.log("Oi");
 		//PEGA VALO DOS CAMPOS
 		var nome = $("input[type=text][name=nome]").val();
 		var telefone = $("input[type=tel][name=telefone]").val();
