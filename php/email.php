@@ -33,5 +33,5 @@ if(mail("henrique.ramires.granatto@gmail.com","Contato Cliente",$conteudo, $head
 	return false;
 }*/
 
-mail("henrique.ramires.granatto@gmail.com","Contato Cliente",$conteudo, $headers);
+mail("henrique.ramires.granatto@gmail.com","Contato Cliente","Teste");
 ?>
