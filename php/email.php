@@ -29,8 +29,6 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= 'From: '.$nome.'' . "\r\n";
 
 $result = mail("henrique.ramires.granatto@gmail.com","Contato Cliente",$conteudo, $headers))
-	
-	echo $result;
 
 	echo json_encode($result);
 ?>
