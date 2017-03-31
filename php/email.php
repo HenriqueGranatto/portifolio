@@ -28,8 +28,7 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
 $headers .= 'From: '.$nome.'' . "\r\n";
 
-if(mail("henrique.ramires.granatto@gmail.com","Contato Cliente",$conteudo, $headers))
-{
-	return false;
-}
+$result = mail("henrique.ramires.granatto@gmail.com","Contato Cliente",$conteudo, $headers))
+
+	echo json_encode($result);
 ?>
