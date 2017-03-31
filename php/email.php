@@ -1,5 +1,5 @@
 <?php
-// 	$nome = $_POST['nome'];
+ 	$nome = $_POST['nome'];
 // 	$telefone = $_POST['telefone'];
 // 	$email = $_POST['email'];
 // 	$assunto = $_POST['assunto'];
@@ -28,5 +28,5 @@
 // // More headers
 // $headers .= 'From: '.$nome.'' . "\r\n";
 
-echo mail("henrique.ramires.granatto@gmail.com","Contato Cliente","Teste")
+echo mail("henrique.ramires.granatto@gmail.com","Contato Cliente",$nome)
 ?>
