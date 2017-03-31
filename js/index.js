@@ -26,6 +26,7 @@ $("document").ready(function(){
 		  $.ajax({
 		      url: "/email",
 		      type: "POST",
+		      data: {nome: nome},
 		      dataType: "json",
 		      success: function(data){
 		        console.log(data);
