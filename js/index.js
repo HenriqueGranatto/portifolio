@@ -13,6 +13,8 @@ $("document").ready(function(){
 		var email = $("input[type=email][name=email]").val();
 		var assunto = $("input[type=text][name=assunto]").val();
 		var snackbarContainer = document.querySelector('#demo-toast-example');
+		
+		console.log("Nome: "+nome);
 
 		//VERIFICA SE OS CAMPOS ESTÃO VAZIO, E SE ESTIVEREM MOSTRA MENSAGEM
 		if(nome == "" || telefone == "" || email == "" || assunto == "")
