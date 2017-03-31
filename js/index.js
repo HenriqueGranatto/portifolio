@@ -24,27 +24,29 @@ $("document").ready(function(){
 		{
 		  //SE OS CAMPOS NÃO ESTIVEREM VAZIOS, MANDA UMA REQUISIÇÃO PRO PHP ENVIAR O EMAIL.
 		  $.ajax({
-		    url: "/email",
-		    type: "POST",
-		    data: "nome="+nome+"&telefone="+telefone+"&email="+email+"&assunto="+assunto,
-		    dataType: "json",
-		    success: function(data){
-		     	snackbarContainer.MaterialSnackbar.showSnackbar(data);
+		      url: "/email",
+		      type: "POST",
+		      data: "nome="+nome,
+		      dataType: "json",
+		      success: function(data){
+		        var data = {message: 'Mensagem nao enviada'};
+		        snackbarContainer.MaterialSnackbar.showSnackbar(data);
 		        $("input[type=text][name=nome]").val("");
 		        $("input[type=text][name=telefone]").val("");
 		        $("input[type=text][name=email]").val("");
 		        $("input[type=text][name=assunto]").val("");
 			console.log(data);
-		    },
-		    error: function(data){
-			snackbarContainer.MaterialSnackbar.showSnackbar(data);
+		      },
+		      error: function(data){
+		        var data = {message: 'Mensagem enviada'};
+		        snackbarContainer.MaterialSnackbar.showSnackbar(data);
 		        $("input[type=text][name=nome]").val("");
 		        $("input[type=text][name=telefone]").val("");
 		        $("input[type=text][name=email]").val("");
 		        $("input[type=text][name=assunto]").val("");
 			console.log(data);
-		    }  
-		  });
+		      }
+		  });	 
 		}
 	});
 });
