@@ -26,7 +26,7 @@ $("document").ready(function(){
 		  $.ajax({
 		      url: "/email",
 		      type: "POST",
-		      data: {nome:nome, telefone:telefone, email:email, assunto:assunto},
+		      data: "nome="+nome,
 		      dataType: "json",
 		      success: function(data){
 		        var msg = {message: 'Mensagem nao enviada'};
