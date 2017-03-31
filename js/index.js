@@ -26,10 +26,10 @@ $("document").ready(function(){
 		  $.ajax({
 		      url: "/email",
 		      type: "POST",
-		      data: "nome=Henrique",
+		      data: "nome="+nome,
 		      dataType: "json",
 		      success: function(data){
-		        console.log("Nome: "+nome);
+		        console.log(nome);
 		      },
 		      error: function(data){
 		        console.log(nome);
