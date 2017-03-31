@@ -32,12 +32,12 @@ $("document").ready(function(){
 		        
 		      },
 		      error: function(data){
-// 		        var data = {message: 'Mensagem não enviada'};
-// 		        snackbarContainer.MaterialSnackbar.showSnackbar(data);
-// 		        $("input[type=text][name=nome]").val("");
-// 		        $("input[type=text][name=telefone]").val("");
-// 		        $("input[type=text][name=email]").val("");
-// 		        $("input[type=text][name=assunto]").val("");
+		        var data = {message: 'Mensagem não enviada'};
+		        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+		        $("input[type=text][name=nome]").val("");
+		        $("input[type=text][name=telefone]").val("");
+		        $("input[type=text][name=email]").val("");
+		        $("input[type=text][name=assunto]").val("");
 		      }
 		  }); 
 		}
