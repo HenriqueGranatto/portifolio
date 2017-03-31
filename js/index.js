@@ -29,7 +29,7 @@ $("document").ready(function(){
 		      data: "nome=Henrique",
 		      dataType: "json",
 		      success: function(data){
-		        console.log(nome);
+		        console.log("Nome: "+nome);
 		      },
 		      error: function(data){
 		        console.log(nome);
