@@ -15,8 +15,8 @@ handlers:
 - url: /src
   static_dir: src
   
-- url: /php/email
-  script: php/email.php
+- url: /email
+  script: /php/email.php
 
 - url: /
   script: index.html
