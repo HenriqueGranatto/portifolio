@@ -22,7 +22,6 @@ $("document").ready(function(){
 		}
 		else
 		{
-		  console.log(nome);
 		  //SE OS CAMPOS NÃO ESTIVEREM VAZIOS, MANDA UMA REQUISIÇÃO PRO PHP ENVIAR O EMAIL.
 		  $.ajax({
 		      url: "/email",
@@ -30,10 +29,10 @@ $("document").ready(function(){
 		      data: "nome=Henrique",
 		      dataType: "json",
 		      success: function(data){
-		        console.log(data);
+		        console.log(nome);
 		      },
 		      error: function(data){
-		        console.log(data);
+		        console.log(nome);
 		      }
 		  }); 
 		}
