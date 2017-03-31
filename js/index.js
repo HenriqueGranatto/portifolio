@@ -29,8 +29,8 @@ $("document").ready(function(){
 		      data: {nome:nome, telefone:telefone, email:email, assunto:assunto},
 		      dataType: "json",
 		      success: function(data){
-		        var data = {message: 'Mensagem nao enviada'};
-		        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+		        var msg = {message: 'Mensagem nao enviada'};
+		        snackbarContainer.MaterialSnackbar.showSnackbar(msg);
 		        $("input[type=text][name=nome]").val("");
 		        $("input[type=text][name=telefone]").val("");
 		        $("input[type=text][name=email]").val("");
@@ -38,8 +38,8 @@ $("document").ready(function(){
 			console.log(data);
 		      },
 		      error: function(data){
-		        var data = {message: 'Mensagem enviada'};
-		        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+		        var msg = {message: 'Mensagem enviada'};
+		        snackbarContainer.MaterialSnackbar.showSnackbar(msg);
 		        $("input[type=text][name=nome]").val("");
 		        $("input[type=text][name=telefone]").val("");
 		        $("input[type=text][name=email]").val("");
