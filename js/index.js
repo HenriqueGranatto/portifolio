@@ -26,7 +26,7 @@ $("document").ready(function(){
 		  $.ajax({
 		      url: "/email",
 		      type: "POST",
-		      data: "nome="+nome,
+		      data: {nome:nome, telefone:telefone, email:email, assunto:assunto},
 		      dataType: "json",
 		      success: function(data){
 		        var data = {message: 'Mensagem nao enviada'};
@@ -46,7 +46,7 @@ $("document").ready(function(){
 		        $("input[type=text][name=assunto]").val("");
 			console.log(data);
 		      }
-		  });	 
+		  }); 
 		}
 	});
 });
