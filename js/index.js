@@ -29,10 +29,20 @@ $("document").ready(function(){
 		      data: "nome="+nome,
 		      dataType: "json",
 		      success: function(data){
-		        console.log(nome);
+		        var msg = {message: 'Mensagem enviada'};
+		        snackbarContainer.MaterialSnackbar.showSnackbar(msg);
+		        $("input[type=text][name=nome]").val("");
+		        $("input[type=text][name=telefone]").val("");
+		        $("input[type=text][name=email]").val("");
+		        $("input[type=text][name=assunto]").val("");
 		      },
 		      error: function(data){
-		        console.log(nome);
+		        var msg = {message: 'Mensagem nao enviada'};
+		        snackbarContainer.MaterialSnackbar.showSnackbar(msg);
+		        $("input[type=text][name=nome]").val("");
+		        $("input[type=text][name=telefone]").val("");
+		        $("input[type=text][name=email]").val("");
+		        $("input[type=text][name=assunto]").val("");
 		      }
 		  }); 
 		}
