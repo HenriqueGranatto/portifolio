@@ -26,7 +26,7 @@ $("document").ready(function(){
 		  $.ajax({
 		      url: "/email",
 		      type: "POST",
-		      data: "nome="+nome,
+		      data: "nome=Henrique",
 		      dataType: "json",
 		      success: function(data){
 		        console.log(data);
