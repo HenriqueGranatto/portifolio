@@ -28,5 +28,5 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
 $headers .= 'From: '.$nome.'' . "\r\n";
 
-echo mail("henrique.ramires.granatto@gmail.com","Contato Cliente",$conteudo,$headers);
+echo mail("henrique.ramires.granatto@gmail.com","Contato Cliente",$conteudo);
 ?>
