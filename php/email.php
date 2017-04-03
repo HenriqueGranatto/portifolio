@@ -35,5 +35,5 @@ $headers = 'From: Fulano' . "\r\n" .
     'Reply-To: webmaster@example.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-echo mail($to, $subject, $message, $headers);
+echo mail($to, $subject, $message);
 ?>
