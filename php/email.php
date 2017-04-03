@@ -28,5 +28,12 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
 $headers .= 'From: '.$nome.'' . "\r\n";
 
-echo mail("henrique.ramires.granatto@gmail.com","Contato Cliente",$conteudo);
+$to      = 'nobody@example.com';
+$subject = 'the subject';
+$message = 'hello';
+$headers = 'From: webmaster@example.com' . "\r\n" .
+    'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+echo mail($to, $subject, $message, $headers);
 ?>
