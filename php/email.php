@@ -37,9 +37,9 @@ try {
 
     $message = new Message();
     $message->setSender($name.'<'.$from.'>');
-    $message->addTo(''.$nome.'');
-    $message->setSubject(''.$assunto.'');
-    $message->setTextBody(''.$conteudo.'');
+    $message->addTo($nome);
+    $message->setSubject($assunto);
+    $message->setTextBody($conteudo);
     $message->send();
 
     header("Location: /");
