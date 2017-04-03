@@ -27,4 +27,22 @@
 
 // More headers
 // $headers .= 'From: '.$nome.'' . "\r\n";
+
+use \google\appengine\api\mail\Message;
+
+try {
+
+    $message = new Message();
+    $message->setSender("Henrique");
+    $message->addTo("henrique.ramires.granatto@gmail.com");
+    $message->setSubject("Teste");
+    $message->setTextBody("Oi");
+    $message->send();
+
+    header("Location: /mail_sent");
+
+} catch (InvalidArgumentException $e) {
+
+    $error = "Unable to send mail. $e";
+}
 ?>
