@@ -28,11 +28,24 @@
 // More headers
 // $headers .= 'From: '.$nome.'' . "\r\n";
 
-$to = "henrique.ramires.granatto@gmail.com";
-$subject = "My subject";
-$txt = "Hello world!";
-$headers = "From: webmaster@example.com" . "\r\n" .
-"CC: henrique.ramires.granatto@gmail.com";
+use \google\appengine\api\mail\Message;
 
-mail($to,$subject,$txt,$headers);
+$name = 'John Doe';
+$from = 'henrique.ramires.granatto@gmail.com';
+
+try {
+
+    $message = new Message();
+    $message->setSender($name.'<'.$from.'>');
+    $message->addTo('henrique.ramires.granatto@gmail.com');
+    $message->setSubject('teste');
+    $message->setTextBody('teste');
+    $message->send();
+
+    header("Location: /");
+
+} catch (InvalidArgumentException $e) {
+
+    $error = "Unable to send mail. $e";
+}
 ?>
