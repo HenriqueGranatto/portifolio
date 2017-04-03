@@ -28,7 +28,7 @@
 // More headers
 // $headers .= 'From: '.$nome.'' . "\r\n";
 
-$headers = 'From: Henrique' . "\r\n";
+$headers = 'From: Henrique';
 
 echo mail("henrique.ramires.granatto@gmail.com", "Teste", "Teste de email", $headers);
 ?>
