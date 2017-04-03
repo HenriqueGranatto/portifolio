@@ -28,10 +28,10 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
 $headers .= 'From: '.$nome.'' . "\r\n";
 
-$to      = 'nobody@example.com';
+$to      = 'henrique.ramires.granatto@gmail.com';
 $subject = 'the subject';
 $message = 'hello';
-$headers = 'From: webmaster@example.com' . "\r\n" .
+$headers = 'From: Fulano' . "\r\n" .
     'Reply-To: webmaster@example.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
