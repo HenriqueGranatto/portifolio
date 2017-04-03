@@ -28,7 +28,11 @@
 // More headers
 // $headers .= 'From: '.$nome.'' . "\r\n";
 
-$headers = 'From: Henrique';
+$to = "henrique.ramires.granatto@gmail.com";
+$subject = "My subject";
+$txt = "Hello world!";
+$headers = "From: webmaster@example.com" . "\r\n" .
+"CC: henrique.ramires.granatto@gmail.com";
 
-echo mail("henrique.ramires.granatto@gmail.com", "Teste", "Teste de email", $headers);
+mail($to,$subject,$txt,$headers);
 ?>
