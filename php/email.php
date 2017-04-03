@@ -36,7 +36,7 @@ $from = ''.$email.'';
 try {
 
     $message = new Message();
-    $message->setSender('<'.$from.'>');
+    $message->setSender($name.'<'.$from.'>');
     $message->addTo(''.$nome.'');
     $message->setSubject(''.$assunto.'');
     $message->setTextBody(''.$conteudo.'');
