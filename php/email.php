@@ -32,7 +32,6 @@ $to      = 'henrique.ramires.granatto@gmail.com';
 $subject = 'the subject';
 $message = 'hello';
 $headers = '$headers = 'MIME-Version: 1.0' . "\r\n" . 'Content-type: text/html; charset=UTF-8' . "\r\n"';
-$headers .='From: Fulano';
 
 echo mail($to, $subject, $message, $headers);
 ?>
