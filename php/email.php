@@ -1,26 +1,26 @@
 <?php
-//  	$nome = $_POST['nome'];
-// 	$telefone = $_POST['telefone'];
-// 	$email = $_POST['email'];
-// 	$assunto = $_POST['assunto'];
+ 	$nome = $_POST['nome'];
+	$telefone = $_POST['telefone'];
+	$email = $_POST['email'];
+	$assunto = $_POST['assunto'];
 
-// 	$conteudo = 
-// 	'
-// 	<center>
-// 		<div style="1px solid #CCCCCC !important">
-// 	    <table width="500px"style="border-collapse: collapse; text-align: center; font-family: "Roboto", sans-serif;">
-// 	      <thead>
-// 	        <th style="padding: 20px; color: #ffffff; background-color:orange; font-size: 15pt;">Novo email recebido<br><br>via Portifólio</th>
-// 	      </thead>
-// 	      <tbody style="font-size:13pt">
-// 	        <tr><td style="padding: 20px; border-bottom: 1px solid #CCCCCC"><b>Nome:</b> '.$nome.'</td></tr>
-// 	        <tr><td style="padding: 20px; border-bottom: 1px solid #CCCCCC"><b>Telefone:</b> '.$telefone.'</td></tr>
-// 	        <tr><td style="padding: 20px; border-bottom: 1px solid #CCCCCC"><b>Email:</b> '.$email.'</td></tr>
-// 	        <tr><td style="padding: 20px;"><b>Assunto:</b> '.$assunto.'</td></tr>
-// 	      </tbody>
-// 	    </table>
-// 	</center>
-// 	';
+	$conteudo = 
+	'
+	<center>
+		<div style="1px solid #CCCCCC !important">
+	    <table width="500px"style="border-collapse: collapse; text-align: center; font-family: "Roboto", sans-serif;">
+	      <thead>
+	        <th style="padding: 20px; color: #ffffff; background-color:orange; font-size: 15pt;">Novo email recebido<br><br>via Portifólio</th>
+	      </thead>
+	      <tbody style="font-size:13pt">
+	        <tr><td style="padding: 20px; border-bottom: 1px solid #CCCCCC"><b>Nome:</b> '.$nome.'</td></tr>
+	        <tr><td style="padding: 20px; border-bottom: 1px solid #CCCCCC"><b>Telefone:</b> '.$telefone.'</td></tr>
+	        <tr><td style="padding: 20px; border-bottom: 1px solid #CCCCCC"><b>Email:</b> '.$email.'</td></tr>
+	        <tr><td style="padding: 20px;"><b>Assunto:</b> '.$assunto.'</td></tr>
+	      </tbody>
+	    </table>
+	</center>
+	';
 
 // $headers = "MIME-Version: 1.0" . "\r\n";
 // $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
@@ -31,15 +31,15 @@
 use \google\appengine\api\mail\Message;
 
 $name = 'John Doe';
-$from = 'henrique.ramires.granatto@gmail.com';
+$from = ''.$email.'';
 
 try {
 
     $message = new Message();
-    $message->setSender($name.'<'.$from.'>');
-    $message->addTo('henrique.ramires.granatto@gmail.com');
-    $message->setSubject('teste');
-    $message->setTextBody('teste');
+    $message->setSender('<'.$from.'>');
+    $message->addTo(''.$nome.'');
+    $message->setSubject(''.$assunto.'');
+    $message->setTextBody(''.$conteudo.'');
     $message->send();
 
     header("Location: /");
