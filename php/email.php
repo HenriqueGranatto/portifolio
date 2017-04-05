@@ -31,18 +31,16 @@
 use \google\appengine\api\mail\Message;
 
 $name = 'John Doe';
-$from = ''.$email.'';
+$from = 'henrique.ramires.granatto@gmail.com';
 
 try {
 
     $message = new Message();
     $message->setSender($name.'<'.$from.'>');
-    $message->addTo($nome);
-    $message->setSubject($assunto);
-    $message->setTextBody($conteudo);
+    $message->addTo("henrique.ramires.granatto@gmail.com");
+    $message->setSubject("Teste");
+    $message->setTextBody("Teste");
     $message->send();
-
-    header("Location: /");
 
 } catch (InvalidArgumentException $e) {
 
