@@ -38,8 +38,8 @@ try {
     $message = new Message();
     $message->setSender($name.'<'.$from.'>');
     $message->addTo("henrique.ramires.granatto@gmail.com");
-    $message->setSubject("Teste");
-    $message->setTextBody("Teste");
+    $message->setSubject($assunto);
+    $message->sethtmlBody($conteudo);
     $message->send();
 
 } catch (InvalidArgumentException $e) {
