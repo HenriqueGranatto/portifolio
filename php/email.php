@@ -29,17 +29,22 @@
 // $headers .= 'From: '.$nome.'' . "\r\n";
 
 use \google\appengine\api\mail\Message;
-$email = $_POST['email'];
-$name = 'John Doe';
+$nome = $_POST['nome'];
 $from = 'henrique.ramires.granatto@gmail.com';
+$assunto = $_POST['assunto'];
+
 try {
     $message = new Message();
-    $message->setSender($name.'<'.$from.'>');
-    $message->addTo("canalguianoob@gmail.com");
-    $message->setSubject("Teste");
+    $message->setSender($nome.'<'.$from.'>');
+    $message->addTo("henrique.ramires.granatto@gmail.com");
+    $message->setSubject($assunto);
     $message->setTextBody("Teste");
     $message->send();
+    
+    return true;
 } catch (InvalidArgumentException $e) {
     $error = "Unable to send mail. $e";
+    
+    return false;
 }
 ?>
