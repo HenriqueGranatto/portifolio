@@ -29,11 +29,12 @@
 // $headers .= 'From: '.$nome.'' . "\r\n";
 
 use \google\appengine\api\mail\Message;
+$email = $_POST['email'];
 $name = 'John Doe';
 $from = 'henrique.ramires.granatto@gmail.com';
 try {
     $message = new Message();
-    $message->setSender($name.'<'.$from.'>');
+    $message->setSender($name.'<'.$email.'>');
     $message->addTo("henrique.ramires.granatto@gmail.com");
     $message->setSubject("Teste");
     $message->setTextBody("Teste");
