@@ -30,6 +30,7 @@ use \google\appengine\api\mail\Message;
 
 // More headers
 // $headers .= 'From: '.$nome.'' . "\r\n";
+   $header = array('on-behalf-of' => 'Fulano');    
 
     try {
         $message = new Message();
@@ -37,6 +38,7 @@ use \google\appengine\api\mail\Message;
         $message->addTo("henrique.ramires.granatto@gmail.com");
         $message->setSubject("Contato via site");
         $message->setHtmlBody("".$conteudo."");
+	$message->setHeader($header);    
         $message->send();
 
         echo 1;
