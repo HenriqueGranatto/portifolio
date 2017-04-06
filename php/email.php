@@ -6,7 +6,7 @@ use \google\appengine\api\mail\Message;
     $telefone = $_POST['telefone'];
     $email = $_POST['email'];
     $assunto = $_POST['assunto'];
-    $from = 'henrique.ramires.granatto@gmail.com';
+    $from = 'contato@henriquegranatto.com.br';
     $conteudo = 
         '
         <center>
