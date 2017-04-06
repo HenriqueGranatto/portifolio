@@ -31,11 +31,11 @@
 use \google\appengine\api\mail\Message;
 $email = $_POST['email'];
 $name = 'John Doe';
-$from = 'paulo.renato85@gmail.com';
+$from = 'henrique.ramires.granatto@gmail.com';
 try {
     $message = new Message();
     $message->setSender($name.'<'.$from.'>');
-    $message->addTo("henrique.ramires.granatto@gmail.com");
+    $message->addTo("canalguianoob@gmail.com");
     $message->setSubject("Teste");
     $message->setTextBody("Teste");
     $message->send();
