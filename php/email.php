@@ -33,13 +33,14 @@ use \google\appengine\api\mail\Message;
 
     try {
         $message = new Message();
-        $message->setSender($nome.'<'.$from.'>');
+        $message->setSender('Contato via site'.'<'.$from.'>');
         $message->addTo("henrique.ramires.granatto@gmail.com");
         $message->setSubject("Contato via site");
         $message->setHtmlBody("".$conteudo."");
         $message->send();
 
-        return true;
+        echo 1;
+	    
         } catch (InvalidArgumentException $e) {
         $error = "Unable to send mail. $e";
 
