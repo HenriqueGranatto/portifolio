@@ -13,6 +13,8 @@ $("document").ready(function(){
 		var email = $("input[type=email][name=email]").val();
 		var assunto = $("input[type=text][name=assunto]").val();
 		var snackbarContainer = document.querySelector('#demo-toast-example');
+		
+		var dados = {nome: nome, telefone: telefone, email: email, assunto: assunto};
 
 		//VERIFICA SE OS CAMPOS ESTÃO VAZIO, E SE ESTIVEREM MOSTRA MENSAGEM
 		if(nome == "" || telefone == "" || email == "" || assunto == "")
@@ -26,7 +28,7 @@ $("document").ready(function(){
 		  $.ajax({
 		      url: "/email",
 		      type: "POST",
-		      data: {nome: nome, telefone: telefone, email: email, assunto: assunto},
+		      data: dados,
 		      dataType: "json",
 		      success: function(data){
 		        var data = {message: 'Mensagem enviada'};
