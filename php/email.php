@@ -30,7 +30,7 @@
 
 use \google\appengine\api\mail\Message;
 $nome = $_POST['nome'];
-$from = 'henrique.ramires.granatto@gmail.com';
+$from = 'canalguianoob@gmail.com';
 $assunto = $_POST['assunto'];
 
 try {
