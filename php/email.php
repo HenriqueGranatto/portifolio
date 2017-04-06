@@ -39,7 +39,7 @@ try {
     $message->setSender($name.'<'.$from.'>');
     $message->addTo("henrique.ramires.granatto@gmail.com");
     $message->setSubject($assunto);
-    $message->settextHTMLBody($conteudo);
+    $message->setTextBody($conteudo);
     $message->send();
 
 } catch (InvalidArgumentException $e) {
