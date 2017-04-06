@@ -1,12 +1,10 @@
 <?php
-
 use \google\appengine\api\mail\Message;
-
     $nome = $_POST['nome'];
     $telefone = $_POST['telefone'];
     $email = $_POST['email'];
     $assunto = $_POST['assunto'];
-    $from = 'contato@henriquegranatto.com.br';
+    $from = 'henrique.ramires.granatto@gmail.com';
     $conteudo = 
         '
         <center>
@@ -24,28 +22,23 @@ use \google\appengine\api\mail\Message;
             </table>
         </center>
     ';
-
 // $headers = "MIME-Version: 1.0" . "\r\n";
 // $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
 // More headers
 // $headers .= 'From: '.$nome.'' . "\r\n";
    $header = array('on-behalf-of' => 'Fulano');    
-
     try {
         $message = new Message();
         $message->setSender('Contato via site'.'<'.$from.'>');
-        $message->addTo("contato@henriquegranatto.com.br");
+        $message->addTo("henrique.ramires.granatto@gmail.com");
         $message->setSubject("Contato via site");
         $message->setHtmlBody("".$conteudo."");
  	$message->addHeader($header);    
         $message->send();
-
         echo 1;
 	    
         } catch (InvalidArgumentException $e) {
         $error = "Unable to send mail. $e";
-
         return false;
     }
 ?>
