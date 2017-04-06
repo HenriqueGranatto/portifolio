@@ -37,7 +37,7 @@ try {
     $message = new Message();
     $message->setSender($nome.'<'.$from.'>');
     $message->addTo("henrique.ramires.granatto@gmail.com");
-    $message->setSubject("".$assunto."");
+    $message->setSubject("Contato via site");
     $message->setTextBody("Teste");
     $message->send();
     
