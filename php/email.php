@@ -30,7 +30,7 @@
 
 use \google\appengine\api\mail\Message;
 $nome = $_POST['nome'];
-$from = 'canalguianoob@gmail.com';
+$from = 'henrique.ramires.granatto@gmail.com';
 $assunto = $_POST['assunto'];
 
 try {
@@ -38,7 +38,7 @@ try {
     $message->setSender($nome.'<'.$from.'>');
     $message->addTo("henrique.ramires.granatto@gmail.com");
     $message->setSubject("Contato via site");
-    $message->setTextBody("Teste");
+    $message->setHtmlBody("<h1>Teste</h1>");
     $message->send();
     
     return true;
