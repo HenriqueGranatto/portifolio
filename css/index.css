@@ -10,12 +10,6 @@ a{
 	color:#ffffff !important;
 }
 
-section
-{
-	width: 100%; 
-	height: 100vh;
-}
-
 .mdl-navigation a
 {
 	padding: 10px !important;
