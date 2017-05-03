@@ -31,7 +31,7 @@ use \google\appengine\api\mail\Message;
         $message->setSender('Contato via Site'.'<'.$from.'>');
         $message->addTo("henrique.ramires.granatto@gmail.com");
 	$message->addTo("contato@henriquegranatto.com.br");
-        $message->setSubject(".$nome.");
+        $message->setSubject("".$nome."");
         $message->setHtmlBody("".$conteudo."");
         $message->send();
         echo 1;
