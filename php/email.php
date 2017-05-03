@@ -4,7 +4,7 @@ use \google\appengine\api\mail\Message;
     $telefone = $_POST['telefone'];
     $email = $_POST['email'];
     $assunto = $_POST['assunto'];
-    $from = 'henrique.ramires.granatto@gmail.com';
+    $from = 'contato@henriquegranatto.com.br';
     $conteudo = 
         '
         <center>
@@ -29,7 +29,7 @@ use \google\appengine\api\mail\Message;
    $header = array('on-behalf-of' => 'Fulano');    
     try {
         $message = new Message();
-        $message->setSender('Contato via site'.'<'.$from.'>');
+        $message->setSender(''.$nome.' - Contato via Site'.'<'.$from.'>');
         $message->addTo("henrique.ramires.granatto@gmail.com");
         $message->setSubject("Contato via site");
         $message->setHtmlBody("".$conteudo."");
