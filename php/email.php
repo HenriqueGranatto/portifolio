@@ -26,12 +26,12 @@ use \google\appengine\api\mail\Message;
 // $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
 // $headers .= 'From: '.$nome.'' . "\r\n";
-   $header = array('on-behalf-of' => 'Fulano');    
+   $to = {"henrique.ramires.granatto@gmail.com"};
     try {
         $message = new Message();
-        $message->setSender(''.$nome.' - Contato via Site'.'<'.$from.'>');
-        $message->addTo("henrique.ramires.granatto@gmail.com");
-        $message->setSubject("Contato via site");
+        $message->setSender('Contato via Site'.'<'.$from.'>');
+        $message->addTo($to);
+        $message->setSubject(".$nome.");
         $message->setHtmlBody("".$conteudo."");
         $message->send();
         echo 1;
