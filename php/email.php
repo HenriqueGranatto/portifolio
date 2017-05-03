@@ -30,7 +30,7 @@ use \google\appengine\api\mail\Message;
     try {
         $message = new Message();
         $message->setSender('Contato via Site'.'<'.$from.'>');
-        $message->addTo($to);
+        $message->addTo(".$to.");
         $message->setSubject(".$nome.");
         $message->setHtmlBody("".$conteudo."");
         $message->send();
