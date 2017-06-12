@@ -23,6 +23,7 @@ a{
 #home
 {
 	background: url('../img/home.jpg') center / cover;
+	height:100vh;
 }
 
 #home #homeTitulo
