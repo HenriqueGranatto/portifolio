@@ -52,7 +52,7 @@ a{
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
-	height: 80vh;
+	height: 0vh;
 	padding-top: 4em;
 	padding-bottom: 4em;
 }
