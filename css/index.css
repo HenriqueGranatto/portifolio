@@ -52,8 +52,7 @@ a{
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
-	height: 0vh;
-	padding-top: 4em;
+	padding-top: 1em;
 	padding-bottom: 4em;
 }
 
