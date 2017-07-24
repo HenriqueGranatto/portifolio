@@ -48,6 +48,7 @@ a{
 
 #servicos
 {
+	height:auto;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -75,12 +76,6 @@ a{
 	padding-top: 1.5em;
 	margin:.5em;
 	cursor: pointer;
-}
-
-#servicosNext
-{
-	display: block;
-	margin-top: 2em;
 }
 
 #portifolio
