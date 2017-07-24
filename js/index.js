@@ -1,6 +1,6 @@
 $("document").ready(function(){
 	//FADE IN DO BODY
-	$(body).fadeIn();
+	$("body").fadeIn();
 	
 	// INICIA OS EFEITOS DO WOW.JS
 	new WOW().init();
