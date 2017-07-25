@@ -53,9 +53,7 @@ a{
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
-	padding-top: 1em;
-	padding-bottom: 4em;
-	margin-top:-50px;
+	padding-top: 2em;
 }
 
 #servicos #servicosTitulo
