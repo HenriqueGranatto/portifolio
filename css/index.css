@@ -48,14 +48,14 @@ a{
 
 #servicos
 {
-	height:calc(80vh - 64px) !important;
+	height:calc(80vh - 100px) !important;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
 	padding-top: 1em;
 	padding-bottom: 4em;
-	margin-top:-100px;
+	margin-top:-120px;
 }
 
 #servicos #servicosTitulo
