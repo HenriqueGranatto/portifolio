@@ -48,13 +48,12 @@ a{
 
 #servicos
 {
-	height:50vh !important;
+	height:calc(80vh - 100px) !important;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
-	padding-top: 1em;
-	padding-bottom: 4em;
+	padding-top: 2em;
 }
 
 #servicos #servicosTitulo
@@ -76,15 +75,6 @@ a{
 	padding-top: 1.5em;
 	margin:.5em;
 	cursor: pointer;
-}
-
-#portifolio
-{
-	display: flex;
-	color:#000000;
-	font-size: 1.5em;
-	padding-top: 4em;
-	padding-bottom: 5em;
 }
 
 #contato
