@@ -85,6 +85,8 @@ a{
 	align-items: center;
 	height: 100vh;
 }
+
+/*
 @media screen and (min-width: 235px) 
 {
 	.mdl-layout__header-row span
@@ -177,6 +179,8 @@ a{
 		background-color:red !important;
 	}
 }
+
+*/
 
 @media screen and (min-width: 1024px) 
 {
