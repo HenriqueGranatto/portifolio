@@ -109,11 +109,6 @@ a{
 		font-size: .5em;
 		color:black !important;
 	}
-	
-	#serviços
-	{
-		background-color:red !important;
-	}
 }
 
 @media screen and (min-width: 640px) 
@@ -134,6 +129,11 @@ a{
 	{
 		margin-top: 15%;
 		font-size: 1.2em;
+	}
+	
+	#servicos
+	{
+		background-color:red !important;
 	}
 }
 
