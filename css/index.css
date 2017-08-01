@@ -62,7 +62,7 @@ a{
 	font-size: 2em;
 	margin-top:3em;
 	margin-bottom: 1em;
-	color: #000000;
+	color: #000000 !important;
 }
 
 #servicos #card
