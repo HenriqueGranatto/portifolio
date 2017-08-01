@@ -48,7 +48,7 @@ a{
 
 #servicos
 {
-	height:calc(80vh - 100px) !important;
+	height: auto;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
