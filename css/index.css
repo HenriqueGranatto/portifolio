@@ -46,6 +46,7 @@ a{
 	font-size: 1.2em;
 }
 
+
 #servicos
 {
 	height: auto;
@@ -56,6 +57,7 @@ a{
 	padding-top: 2em;
 }
 
+/*
 #servicos #servicosTitulo
 {
 	display: block;
@@ -76,6 +78,7 @@ a{
 	margin:.5em;
 	cursor: pointer;
 }
+*/
 
 #contato
 {
