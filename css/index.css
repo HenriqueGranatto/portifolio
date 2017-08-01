@@ -214,7 +214,7 @@ a{
 
 	#servicos
 	{
-		background-color: #000000 !important;
+		display:block !important;
 	}
 
 	#contato
