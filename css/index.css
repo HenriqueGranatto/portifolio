@@ -212,9 +212,9 @@ a{
 		font-size: 1.2em;
 	}
 
-	#servicos #servicosTitulo
+	#servicos
 	{
-		color:red;	
+		background-color: #000000 !important;
 	}
 
 	#contato
