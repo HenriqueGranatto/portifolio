@@ -85,3 +85,145 @@ a{
 	align-items: center;
 	height: 100vh;
 }
+
+@media screen and (min-width: 235px) 
+{
+	.mdl-layout__header-row span
+	{
+		font-size: 1.1em;
+	}
+
+	#home #homeNext
+	{
+		margin-top: 5%;
+		font-size: 1.2em;
+	}
+
+	#contato #titulo
+	{
+		padding: 40px;
+	}
+
+	#contato #telefone
+	{
+		padding:40px;
+		font-size: .5em;
+		color:black !important;
+	}
+	
+	#serviços
+	{
+		background-color:red;	
+	}
+}
+
+@media screen and (min-width: 640px) 
+{
+	#home #homeTitulo
+	{
+		padding-top: 30%;
+		font-size: 3em;
+	}
+
+	#home #homeSubTitulo
+	{
+		padding-top: 10%;
+		font-size: 1.5em;
+	}
+
+	#home #homeNext
+	{
+		margin-top: 15%;
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 768px) 
+{
+	#home #homeTitulo
+	{
+		padding-top: 25%;
+	}
+
+	#home #homeSubTitulo
+	{
+		padding-top: 5%;
+	}
+}
+
+@media screen and (min-width: 850px) 
+{
+	#contato
+	{
+		flex-direction: column;
+	}
+
+	#contato #form
+	{
+		width: 50% !important;
+	}
+}
+
+@media screen and (min-width: 1024px) 
+{
+	#home #homeTitulo
+	{
+		padding-top: 20%;
+	}
+}
+
+@media screen and (min-width: 1050px) 
+{
+	#home #homeNext
+	{
+		margin-top: 5%;
+	}
+}
+
+@media screen and (min-width: 1280px) 
+{
+	#home #homeNext
+	{
+		margin-top: 5%;
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 1366px) 
+{
+	#home #homeTitulo
+	{
+		padding-top: 10%;
+		font-size: 4em;
+		font-weight: bold;
+	}
+
+	#home #homeSubTitulo
+	{
+		padding-top: 6%;
+		font-size: 1.7em;
+	}
+
+	#home #homeNext
+	{
+		margin-top: 10%;
+		font-size: 1.2em;
+	}
+
+	#servicos
+	{
+		height: calc(100vh - 4em);
+		padding-top: 1em;
+		padding-bottom: 4em;
+	}
+
+	#contato
+	{
+		flex-direction: column;
+	}
+
+	#contato #form
+	{
+		width: 50% !important;
+	}
+}
