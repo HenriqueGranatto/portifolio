@@ -214,12 +214,7 @@ a{
 
 	#servicos #servicosTitulo
 	{
-		display:block !important;
-	}
-	
-	#sobre
-	{
-		font-size:2em;	
+		color:red;	
 	}
 
 	#contato
