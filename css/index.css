@@ -77,6 +77,14 @@ a{
 	cursor: pointer;
 }
 
+#portfolioTitulo
+{
+	font-size: 2em;
+	margin-top:3em;
+	margin-bottom: 1em;
+	color: #000000 !important;
+}
+
 #contato
 {
 	display: flex;
