@@ -86,7 +86,7 @@ a{
 	height: 100vh;
 }
 
-@media screen and (min-width: 235px) 
+@media screen and (max-width: 235px) 
 {
 	.mdl-layout__header-row span
 	{
@@ -117,7 +117,7 @@ a{
 	}
 }
 
-@media screen and (min-width: 640px) 
+@media screen and (max-width: 640px) 
 {
 	#home #homeTitulo
 	{
@@ -138,7 +138,7 @@ a{
 	}
 }
 
-@media screen and (min-width: 768px) 
+@media screen and (max-width: 768px) 
 {
 	#home #homeTitulo
 	{
@@ -151,7 +151,7 @@ a{
 	}
 }
 
-@media screen and (min-width: 850px) 
+@media screen and (max-width: 850px) 
 {
 	#contato
 	{
@@ -164,7 +164,7 @@ a{
 	}
 }
 
-@media screen and (min-width: 1024px) 
+@media screen and (max-width: 1024px) 
 {
 	#home #homeTitulo
 	{
@@ -172,7 +172,7 @@ a{
 	}
 }
 
-@media screen and (min-width: 1050px) 
+@media screen and (max-width: 1050px) 
 {
 	#home #homeNext
 	{
@@ -180,7 +180,7 @@ a{
 	}
 }
 
-@media screen and (min-width: 1280px) 
+@media screen and (max-width: 1280px) 
 {
 	#home #homeNext
 	{
@@ -189,7 +189,7 @@ a{
 	}
 }
 
-@media screen and (min-width: 1366px) 
+@media screen and (max-width: 1366px) 
 {
 	#home #homeTitulo
 	{
