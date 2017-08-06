@@ -152,7 +152,7 @@ a{
 {
 	#home #homeTitulo
 	{
-		padding-top: 15%;
+		padding-top: 25%;
 	}
 	
 	#contato
@@ -166,11 +166,12 @@ a{
 	}
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 720px) 
 {
 	#home #homeTitulo
 	{
 		padding-top: 15%;
+		font-size: 3.5em !important;
 	}
 
 	#home #homeSubTitulo
