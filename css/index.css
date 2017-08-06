@@ -86,118 +86,6 @@ a{
 	height: 100vh;
 }
 
-@media screen and (max-width: 235px) 
-{
-	.mdl-layout__header-row span
-	{
-		font-size: 1.1em;
-	}
-
-	#home #homeNext
-	{
-		margin-top: 5%;
-		font-size: 1.2em;
-	}
-
-	#contato #titulo
-	{
-		padding: 40px;
-	}
-
-	#contato #telefone
-	{
-		padding:40px;
-		font-size: .5em;
-		color:black !important;
-	}
-}
-
-
-@media screen and (max-width: 480px) 
-{
-	#home #homeTitulo
-	{
-		font-size:1em !important;
-	}
-}
-
-@media screen and (max-width: 640px) 
-{
-	#home #homeTitulo
-	{
-		padding-top: 30% !important;
-		font-size: 3em !important;
-	}
-
-	#home #homeSubTitulo
-	{
-		padding-top: 10% !important;
-		font-size: 1.5em !important;
-	}
-
-	#home #homeNext
-	{
-		margin-top: 15% !important;
-		font-size: 1.2em !important;
-	}
-}
-
-@media screen and (max-width: 768px) 
-{
-	#home #homeTitulo
-	{
-		padding-top: 15%;
-	}
-
-	#home #homeSubTitulo
-	{
-		padding-top: 5%;
-	}
-}
-
-@media screen and (max-width: 840px) 
-{
-	#home #homeTitulo
-	{
-		padding-top: 15%;
-	}
-	
-	#contato
-	{
-		flex-direction: column;
-	}
-
-	#contato #form
-	{
-		width: 50% !important;
-	}
-}
-
-@media screen and (max-width: 1024px) 
-{
-	#home #homeTitulo
-	{
-		padding-top: 20%;
-	}
-}
-
-@media screen and (max-width: 1050px) 
-{
-	#home #homeNext
-	{
-		margin-top: 5%;
-	}
-}
-
-@media screen and (max-width: 1280px) 
-{
-	#home #homeNext
-	{
-		margin-top: 5%;
-		font-size: 1.2em;
-	}
-}
-
 @media screen and (max-width: 1366px) 
 {
 	#home #homeTitulo
@@ -233,5 +121,115 @@ a{
 	#contato #form
 	{
 		width: 50% !important;
+	}
+}
+@media screen and (max-width: 1280px) 
+{
+	#home #homeNext
+	{
+		margin-top: 5%;
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 1050px) 
+{
+	#home #homeNext
+	{
+		margin-top: 5%;
+	}
+}
+
+@media screen and (max-width: 1024px) 
+{
+	#home #homeTitulo
+	{
+		padding-top: 20%;
+	}
+}
+
+@media screen and (max-width: 840px) 
+{
+	#home #homeTitulo
+	{
+		padding-top: 15%;
+	}
+	
+	#contato
+	{
+		flex-direction: column;
+	}
+
+	#contato #form
+	{
+		width: 50% !important;
+	}
+}
+
+@media screen and (max-width: 768px) 
+{
+	#home #homeTitulo
+	{
+		padding-top: 15%;
+	}
+
+	#home #homeSubTitulo
+	{
+		padding-top: 5%;
+	}
+}
+
+@media screen and (max-width: 640px) 
+{
+	#home #homeTitulo
+	{
+		padding-top: 30% !important;
+		font-size: 3em !important;
+	}
+
+	#home #homeSubTitulo
+	{
+		padding-top: 10% !important;
+		font-size: 1.5em !important;
+	}
+
+	#home #homeNext
+	{
+		margin-top: 15% !important;
+		font-size: 1.2em !important;
+	}
+}
+
+@media screen and (max-width: 480px) 
+{
+	#home #homeTitulo
+	{
+		font-size:1em !important;
+	}
+}
+
+@media screen and (max-width: 235px) 
+{
+	.mdl-layout__header-row span
+	{
+		font-size: 1.1em;
+	}
+
+	#home #homeNext
+	{
+		margin-top: 5%;
+		font-size: 1.2em;
+	}
+
+	#contato #titulo
+	{
+		padding: 40px;
+	}
+
+	#contato #telefone
+	{
+		padding:40px;
+		font-size: .5em;
+		color:black !important;
 	}
 }
