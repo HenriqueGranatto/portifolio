@@ -122,7 +122,7 @@ a{
 {
 	#home #homeTitulo
 	{
-		font-size: 2em !important;
+		color: red !important;
 	}
 }
 
