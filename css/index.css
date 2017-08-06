@@ -210,6 +210,14 @@ a{
 	}
 }
 
+@media screen and (max-width: 360px) 
+{
+	#home #homeTitulo
+	{
+		font-size:1.8em !important;
+	}
+}
+
 @media screen and (max-width: 235px) 
 {
 	.mdl-layout__header-row span
