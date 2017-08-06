@@ -208,6 +208,11 @@ a{
 	{
 		font-size:2.5em !important;
 	}
+	
+	#contato
+	{
+		width: 70% !important;	
+	}
 }
 
 @media screen and (max-width: 360px) 
