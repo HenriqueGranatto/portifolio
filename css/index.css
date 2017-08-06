@@ -86,6 +86,11 @@ a{
 	height: 100vh;
 }
 
+#contato #form
+	{
+		width: 80% !important;
+	}
+
 @media screen and (max-width: 1366px) 
 {
 	#home #homeTitulo
