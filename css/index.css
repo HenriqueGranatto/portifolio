@@ -91,6 +91,45 @@ a{
 		width: 80% !important;
 	}
 
+@media screen and (max-width: 1440px) 
+{
+	#home #homeTitulo
+	{
+		padding-top: 10%;
+		font-size: 4em;
+		font-weight: bold;
+	}
+
+	#home #homeSubTitulo
+	{
+		padding-top: 6%;
+		font-size: 1.7em;
+	}
+
+	#home #homeNext
+	{
+		margin-top: 10%;
+		font-size: 1.2em;
+	}
+
+	#servicos #servicosTitulo
+	{
+		display:block !important;
+		margin-top:1em !important;
+	}
+
+	#contato
+	{
+		flex-direction: column;
+	}
+
+	#contato #form
+	{
+		width: 50% !important;
+	}
+}
+
+
 @media screen and (max-width: 1366px) 
 {
 	#home #homeTitulo
