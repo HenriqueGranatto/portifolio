@@ -128,6 +128,7 @@ a{
 		width: 50% !important;
 	}
 }
+
 @media screen and (max-width: 1280px) 
 {
 	#home #homeNext
@@ -241,8 +242,20 @@ a{
 {
 	#home #homeTitulo
 	{
-		padding-top: -15% !important;
+		padding-top: -30% !important;
 		font-size: 3em !important;
+	}
+
+	#home #homeSubTitulo
+	{
+		padding-top: -10% !important;
+		font-size: 1.5em !important;
+	}
+
+	#home #homeNext
+	{
+		margin-top: -15% !important;
+		font-size: 1.2em !important;
 	}
 }
 
