@@ -241,7 +241,7 @@ a{
 {
 	#home #homeTitulo
 	{
-		padding-top: 5% !important;
+		padding-top: -15% !important;
 		font-size: 3em !important;
 	}
 }
