@@ -207,6 +207,27 @@ a{
 	}
 }
 
+@media screen and (max-width: 720px) and (max-height: 960px) 
+{
+	#home #homeTitulo
+	{
+		padding-top: 33% !important;
+		font-size: 3em !important;
+	}
+
+	#home #homeSubTitulo
+	{
+		padding-top: 5% !important;
+		font-size: 1.5em !important;
+	}
+
+	#home #homeNext
+	{
+		margin-top: 5% !important;
+		font-size: 1.2em !important;
+	}
+}
+
 @media screen and (max-width: 640px) 
 {
 	#home #homeTitulo
