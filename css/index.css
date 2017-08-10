@@ -242,19 +242,19 @@ a{
 {
 	#home #homeTitulo
 	{
-		padding-top: -30% !important;
+		padding-top: 13% !important;
 		font-size: 3em !important;
 	}
 
 	#home #homeSubTitulo
 	{
-		padding-top: -10% !important;
+		padding-top: 5% !important;
 		font-size: 1.5em !important;
 	}
 
 	#home #homeNext
 	{
-		margin-top: -15% !important;
+		margin-top: 5% !important;
 		font-size: 1.2em !important;
 	}
 }
